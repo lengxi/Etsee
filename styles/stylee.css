@@ -1,0 +1,138 @@
+* { padding:0; margin:0; font-family:helvetica, arial, san-serif;}
+.sharethis { height:16px; line-height:16px; font-family:helvetica, arial, san-serif; font-weight:bold; color:#fff; }
+#toolbar
+{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:16px;
+	z-index:500;
+	padding: 6px 0;
+	background-color:#000;
+	opacity:0.6;
+	color:#fff;
+}
+:focus { opacity:0.9; }
+#toolbar:hover { opacity:0.9; }
+a { text-decoration:none; color:#fff;}
+#toolbar div
+{
+	float:right;
+	padding:0 8px;
+	border-left: 2px solid #fff;
+	font-weight:bold;
+	vertical-align:center;
+	height:16px;
+	line-height:16px;
+	z-index:500;
+	cursor:pointer;
+}
+
+#toolbar div.logo {float:left; border-left:0;}
+
+form input { height:18px; }
+
+.button
+{
+	position:absolute;
+	z-index:500;
+	height:100%;
+	cursor:pointer;
+}
+.button div {position:relative; top:45%; background-color:#fff;opacity:0.5;}
+.button div {height:67px; overflow:hidden;}
+.button div img {position:relative; bottom:67px; }
+.left_b {left:0; }
+.right_b {right:0; }
+
+.main_image {
+	z-index:1;
+}
+
+.scrollable {
+
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: 100%;
+	height:100%; 
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accommodate scrollable items.
+	it's enough that you set width and height for the root element and
+	not for this element.
+*/
+.scrollable .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	height:100%;
+}
+
+/*
+	a single item. must be floated in horizontal scrolling.
+	typically, this element is the one that *you* will style
+	the most.
+*/
+
+.items div {
+	float:left;
+}
+
+.info_box {
+	position:absolute;
+	background-color:#000;
+	opacity:0.7;
+	z-index:1000;
+	padding:20px 12px;
+	float:left;
+	right:100px;
+	bottom:0;
+	color:#fff;
+	width:600px;		
+	overflow:hidden;
+}
+
+.info_title {
+	font-family: calluna-1, calluna-2;
+	font-size: 28px;
+	font-style: italic;
+	font-weight: 300;
+	width:600px;
+	overflow:hidden;
+	padding:5px 0;
+	margin-bottom:5px;
+	cursor:pointer;
+}
+
+.info_main {
+	letter-spacing:2px;
+}
+
+.info_main p
+{ padding:5px 0; }
+
+.info_main p a {color:#fff}
+
+.main_left {
+width: 190px;
+float:left;
+height:100%;
+overflow:hidden;
+}
+
+.main_right {
+margin-left:10px;
+width:400px;
+float:right;
+overflow:hidden;
+height:100%;
+}
+
+#uid {display:none;}
+body #facebox .content {width:600px;}
+.form_left {height:300px;float:left;}
+.form_right {height:300px; float:right;}
+#loading {position:absolute; top:50%; right:50%; z-index:5000000;}
